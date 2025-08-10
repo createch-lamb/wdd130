@@ -86,10 +86,11 @@ nav a:hover {
 
 
 h1,
-h2 {
+h2,
+.site-title {
     font-family: var(--heading-font);
     font-weight: 400;
-    color: var(--accent-color);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 
@@ -247,13 +248,6 @@ footer .socialmedia img {
     border: none;
 }
 
-h1,
-h2,
-.site-title {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
-}
-
-
 
 .employees {
     text-align: center;
@@ -389,12 +383,7 @@ h2,
         text-align: center;
     }
 
-    .employee-gallery img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-
-    }
+    
 
 
 
