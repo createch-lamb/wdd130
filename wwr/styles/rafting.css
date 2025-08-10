@@ -290,36 +290,6 @@ h2,
 
 }
 
-.contact-form input,
-.contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    background-color: var(--accent-color);
-    color: #000;
-    padding: 0.75rem;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.contact-form button:hover {
-    background-color: #cc8900;
-}
-
-.contact-form {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 6px;
-
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -343,9 +313,8 @@ h2,
 }
 
 .contact-form button:hover {
-    background-color: var(--accent-color);
+    background-color: #cc8900;
 }
-
 
 
 
