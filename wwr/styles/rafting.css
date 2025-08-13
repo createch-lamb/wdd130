@@ -49,10 +49,8 @@ header img {
     height: auto;
 }
 
-header h1 {
-    font-family: var(--heading-font);
-    font-size: 1.8rem;
-}
+
+header h1,
  .site-title {
     font-size: clamp(11.5rem, 2vw, 2.5rem);
     font-family: var(--heading-font);
@@ -151,12 +149,23 @@ h2,
 
 }
 
+.cta,
+.newsletter,
+.adventure-gallery,
+.contact-grid,
+.contact-form,
+.employees,
+.history,
+.trip-table table {
+    margin: 2rem auto;
+    padding: 1rem;
+    
+}
+
 .cta {
     text-align: center;
     background-color: var(--accent-color);
-    padding: 2rem 1rem;
     border-radius: 8px;
-    margin: 2rem 0;
 }
 
 .cta h2 {
@@ -164,7 +173,6 @@ h2,
 
 }
 
-.cta button,
 .cta button {
     display: inline-block;
     margin-top: 1rem;
@@ -174,6 +182,8 @@ h2,
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -186,15 +196,25 @@ h2,
     margin-top: 2rem;
 }
 
-.offerings-grid {
+.offerings-grid,
+.trips-grid,
+.adventure-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 1rem;
     align-items: center;
 }
 
-.offerings-grid img {
+.offerings-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+}
+
+.offerings-grid img,
+.adventure-gallery img,
+.trips-grid .trip img,
+.history-image img,
+.employee-gallery img {
     width: 100%;
     border-radius: 6px;
 }
@@ -235,9 +255,15 @@ h2,
 }
 
 
-.history-section h2 {
+.history-section h2,
+.adventures h2 {
     text-align: center;
     margin: 2rem 0 1rem;
+}
+
+.adventures h2 {
+    font-family: var(--heading-font);
+    color: var(--accent-color);
 }
 
 
@@ -258,27 +284,18 @@ h2,
 
 
 .history-image img {
-    width: 100%;
     max-width: 200px;
     display: block;
     margin: 0 auto;
-    border-radius: 6px;
+    
 }
 
-.adventures h2 {
-    text-align: center;
-    margin: 2rem 0 1rem;
-    font-family: var(--heading-font);
-    color: var(--accent-color);
-}
 
 
 .adventure-gallery {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
     text-align: center;
-    padding: 1rem;
+  
 
 }
 
@@ -286,24 +303,12 @@ h2,
     margin: 0;
 }
 
-.adventure-gallery img {
-    width: 100%;
-    border-radius: 6px;
-
-}
 
 .trips-grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-
 }
 
-.trips-grid .trip img {
-    width: 100%;
-    border-radius: 6px;
-}
+
 
 .trips-grid .trip {
     background-color: #f5f5f5;
@@ -316,7 +321,6 @@ h2,
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
     background-color: #fff;
 }
 
@@ -373,13 +377,6 @@ footer .socialmedia img {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-.contact-information {
-    font-size: 1rem;
-
 }
 
 .contact-map iframe {
@@ -388,40 +385,15 @@ footer .socialmedia img {
     border: none;
 }
 
-
-.employees {
-    text-align: center;
-    margin: 2rem auto;
-    max-width: 960px;
-    padding: 1rem;
-}
-
-.employee-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.employee-gallery figure {
-    width: 200px;
-    text-align: center;
-}
-
-.employee-gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.contact-information {
+    font-size: 1rem;
 
 }
 
 .contact-form {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
     background-color: #f9f9f9;
     border-radius: 6px;
-
 }
 
 .contact-form form {
@@ -449,6 +421,27 @@ footer .socialmedia img {
 .contact-form button:hover {
     background-color: #cc8900;
 }
+
+.employees {
+    text-align: center;
+    max-width: 960px;
+    
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.employee-gallery figure {
+    width: 200px;
+    text-align: center;
+}
+
+
+
 
 
 
@@ -480,10 +473,6 @@ footer .socialmedia img {
         width: 80%;
     }
 
-    .contact-form {
-        padding: 1rem;
-    }
-
     .hero article img {
         width: 100px;
         margin: 0;
@@ -491,38 +480,12 @@ footer .socialmedia img {
 
 
 
-    .contact-information {
-        font-size: 1rem;
-
-    }
-
-    .contact-map iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-    }
+   
 
 
 
-    .employees {
-        text-align: center;
-        margin: 2rem auto;
-        max-width: 960px;
-        padding: 1rem;
-    }
-
-    .employee-gallery {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-
-    .employee-gallery figure {
-        width: 200px;
-        text-align: center;
-    }
-
+   
+    
     
     
 
