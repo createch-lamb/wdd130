@@ -32,7 +32,6 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 1rem;
     background-color: var(--accent2-color);
     color: #fff;
     gap: 1rem;
@@ -51,9 +50,13 @@ header img {
 
 
 header h1,
- .site-title {
-    font-size: clamp(11.5rem, 2vw, 2.5rem);
+ .site-title,
+ h1, h2 {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
  }
 
 
@@ -86,15 +89,6 @@ nav a:hover {
 }
 
 
-h1,
-h2,
-.site-title {
-    font-family: var(--heading-font);
-    font-weight: 400;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-}
 
 
 .hero {
@@ -162,6 +156,38 @@ h2,
     
 }
 
+
+.adventure-gallery {
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+  
+
+}
+
+.offerings-grid,
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+    
+}
+
+
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
 .cta {
     text-align: center;
     background-color: var(--accent-color);
@@ -196,19 +222,7 @@ h2,
     margin-top: 2rem;
 }
 
-.offerings-grid,
-.trips-grid,
-.adventure-gallery {
-    display: grid;
-    gap: 2rem;
-    margin-top: 1rem;
-    align-items: center;
-}
 
-.offerings-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-}
 
 .offerings-grid img,
 .adventure-gallery img,
@@ -218,12 +232,20 @@ h2,
     width: 100%;
     border-radius: 6px;
 }
+.offerings-grid,
+.trips-grid,
+.contact-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+
 
 .newsletter {
     text-align: center;
-    padding: 2rem 1rem;
     background-color: #f9f9f9;
-    margin-top: 2rem;
     border-radius: 6px;
 
 }
@@ -262,19 +284,9 @@ h2,
 }
 
 .adventures h2 {
-    font-family: var(--heading-font);
     color: var(--accent-color);
 }
 
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-
-}
 
 .history-text {
     padding: 1rem;
@@ -292,20 +304,9 @@ h2,
 
 
 
-.adventure-gallery {
-    grid-template-columns: repeat(5, 1fr);
-    text-align: center;
-  
-
-}
 
 .adventure-gallery figure {
     margin: 0;
-}
-
-
-.trips-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 
@@ -373,9 +374,7 @@ footer .socialmedia img {
 
 
 .contact-grid {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
     max-width: 900px;
 }
 
