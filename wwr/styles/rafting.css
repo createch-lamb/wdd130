@@ -143,13 +143,43 @@ nav a:hover {
 
 }
 
-.cta,
-.newsletter,
-.adventure-gallery,
-.contact-grid,
-.contact-form,
-.employees,
-.history,
+.cta {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.newsletter {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+.adventure-gallery {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.contact-grid{
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.contact-form {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.employees {
+    margin: 2rem auto;
+    padding: 1rem;
+
+}
+
+.history {
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
 .trip-table table {
     margin: 2rem auto;
     padding: 1rem;
